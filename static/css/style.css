@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body{
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 20vw 1rem 20vw;
+}
+
+.link-navbar{
+    font-size: 20px!important;
+    font-weight: bold;
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+    padding: 5px 20px 5px 20px;
+}
+
+.link-navbar:hover{
+    color: #c89366;
+    bottom: 1px;
+}
+
+.presentation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.img-chef{
+    display: flex;
+    justify-content: center;
+}
+
+.display-mobile{
+    display: none;
+}
+
+.img-chef img{
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(50 50 93 / 10%);
+}
+
+.presentation-description{
+    padding: 10px 20px;
+}
+
+.sub-title{
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #c89366;
+    font-size: 23px !important;
+    margin-top: 29px;
+    margin-bottom: 60px!important;
+    text-align: center;
+}
+
+.action-rs{
+    display: flex;
+    justify-content: space-around;
+}
+
+.fav-choices-container{
+    padding: 0px 10% 0px 10%;
+}
+
+.fav-choices{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.choice-box{
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(50 50 93 / 10%);
+    margin: 10px 10px;
+}
+
+.img-choice{
+    grid-area: img-choice;
+}
+
+.img-choice img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.description-choice{
+    padding: 10px 20px;
+    grid-area: description-choice;
+}
+
+.title{
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.description{
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+.price{
+    font-weight: 700;
+    font-size: 1.15em;
+}
+
+.product-detail{
+    font-weight: 700;
+    border-top: 1px solid #eee;
+    padding: 10px 20px;
+    grid-area: product-detail;
+}
+
+.link-look-product{
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+    font-weight: 700;
+}
+
+.link-look-product:hover{
+    color: #c89366;
+}
+
+
+
+@media screen and (max-width: 996px) {
+    .fav-choices{
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+
+
+@media screen and (max-width: 480px) {
+    .fav-choices{
+        grid-template-columns: 1fr;
+    }
+    .choice-box{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+                "img-choice description-choice  description-choice"
+                "img-choice product-detail product-detail";
+    }
+    .description{
+        display: none;
+    }
+
+    .presentation{
+        grid-template-columns: 1fr;
+    }
+
+    .sub-title{
+        margin-bottom: 30px!important;
+    }
+
+    .display-mobile{
+        display:flex;
+    }
+    .display-web{
+        display: none;
+    }
+  }
