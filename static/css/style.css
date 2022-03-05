@@ -24,6 +24,15 @@ body{
     bottom: 1px;
 }
 
+.with-bg-size {
+    background: url('../img/banner.jpg') 50% 50% no-repeat;
+    height: 200px;
+    width: 100vw;
+    /* Make the background image cover the area of the <div>, and clip the excess */
+    background-size: cover;
+    background-position: center;
+  }
+
 .presentation{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -62,6 +71,35 @@ body{
 .action-rs{
     display: flex;
     justify-content: space-around;
+}
+
+.options{
+    display: flex;
+    overflow-x: scroll;
+    justify-content: space-between;
+}
+
+.fixed{
+    z-index: 3;
+    position: fixed; 
+    width: 100%;
+    background-color: white;
+    top: 0px;
+}
+#category-navbar{
+    height: 50px;
+}
+
+.category{
+    padding: 10px 20px;
+    border-bottom: 5px solid rgb(226, 226, 226);
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+}
+
+.active{
+    border-bottom: 5px solid rgb(0, 0, 0);
 }
 
 .fav-choices-container{
@@ -134,13 +172,19 @@ body{
     .fav-choices{
         grid-template-columns: 1fr 1fr;
     }
+
   }
 
 
 @media screen and (max-width: 480px) {
+    .fav-choices-container{
+        padding: 0%  3.5%;
+    }
+
     .fav-choices{
         grid-template-columns: 1fr;
     }
+
     .choice-box{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -148,6 +192,10 @@ body{
                 "img-choice description-choice  description-choice"
                 "img-choice product-detail product-detail";
     }
+    .with-bg-size {
+        height: 200px;
+      }
+
     .description{
         display: none;
     }
@@ -166,4 +214,5 @@ body{
     .display-web{
         display: none;
     }
+
   }
