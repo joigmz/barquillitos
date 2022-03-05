@@ -20,7 +20,7 @@ function myFunction() {
 function myFunction2() {
     const sections = document.querySelectorAll("section");
     const navLi = document.querySelectorAll(".category");
-
+    
     let current = "";
     sections.forEach((section) => {
     const sectionTop = section.offsetTop;
@@ -36,5 +36,4 @@ function myFunction2() {
         }
     });
     });
-
 }

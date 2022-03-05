@@ -60,6 +60,7 @@
     .item-container{
         width: 50%;
         display: flex;
+        margin: auto;
     }
 
     .choice-box2{
@@ -96,6 +97,9 @@
     
     .price2{
         font-size: 1.15em;
+    }
+    .last-offer{
+        padding: 5px 10px;
     }
 }
 
