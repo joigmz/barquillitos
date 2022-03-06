@@ -159,16 +159,18 @@ body{
     font-weight: 700;
 }
 
-.link-look-product:hover{
-    color: #c89366;
-    border-bottom: 5px solid rgb(0, 0, 0);
-}
 
 .active{
     color: #c89366;
     border-bottom: 5px solid rgb(0, 0, 0);
 }
 
+@media (hover: hover) {
+    .link-look-product:hover{
+        color: #c89366;
+        border-bottom: 5px solid rgb(0, 0, 0);
+    }
+  }
 
 @media screen and (max-width: 996px) {
     .fav-choices{

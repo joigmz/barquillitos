@@ -8,13 +8,6 @@
     text-align: center;
 }
 
-.return-menu:hover{
-    background-color: black;
-    color: white;
-    transition: 300ms;
-    cursor: pointer;
-}
-
 .return-action{
     text-decoration: inherit;
     color: inherit;
@@ -55,6 +48,15 @@
     font-weight: 700;
     font-size: 30px;
 }
+
+@media (hover: hover) {
+    .return-menu:hover{
+        background-color: black;
+        color: white;
+        transition: 300ms;
+        cursor: pointer;
+    }
+  }
 
 @media screen and (max-width: 996px) {
     .item-container{

@@ -1,6 +1,7 @@
 window.onscroll = function () {
     myFunction();
     myFunction2();
+    myFunction3();
 };
 
 function myFunction() {
@@ -36,4 +37,14 @@ function myFunction2() {
         }
     });
     });
+}
+
+function myFunction3() {
+    document.getElementsByClassName('options')[0].scrollLeft = 0;
+    var menus = document.getElementsByClassName('category');
+    for (var i = 0; i < menus.length; i++) {
+        if (menus[i].classList.contains('active')) {
+            document.getElementsByClassName('options')[0].scrollLeft = menus[i].offsetLeft;
+        }
+    }
 }
