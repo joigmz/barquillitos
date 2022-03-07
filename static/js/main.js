@@ -50,5 +50,9 @@ function myFunction3() {
 }
 
 function lockScroll() {
+    var root = document.documentElement;
+
     document.body.classList.toggle('lock-scroll');
+    root.classList.toggle('lock-scroll');
+
 }
