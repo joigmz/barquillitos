@@ -5,25 +5,6 @@ body{
     margin: 0;
 }
 
-.navbar{
-    display: flex;
-    justify-content: center;
-    padding: 1rem 20vw 1rem 20vw;
-}
-
-.link-navbar{
-    font-size: 20px!important;
-    font-weight: bold;
-    color: inherit; /* blue colors for links too */
-    text-decoration: inherit; /* no underline */
-    padding: 5px 20px 5px 20px;
-}
-
-.link-navbar:hover{
-    color: #c89366;
-    bottom: 1px;
-}
-
 .with-bg-size {
     background: url('../img/banner.jpg') 50% 50% no-repeat;
     height: 200px;
