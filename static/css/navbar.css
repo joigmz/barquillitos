@@ -17,7 +17,7 @@ box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
 display: flex;
 justify-content: space-between;
 align-items: center;
-height: 62px;
+height: 64px;
 }
 
 .navbar .menu-items {
@@ -43,7 +43,6 @@ padding: 0.7rem;
 .nav-container {
 display: block;
 position: relative;
-height: 66px;
 }
 
 .nav-container .checkbox {
@@ -114,9 +113,14 @@ font-size: 1.5rem;
 font-weight: 500;
 }
 .container-brand-logo{
-    height: 60px;
     display: flex;
     justify-content: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    height: 64px;
 }
 
 .logo-menu {
