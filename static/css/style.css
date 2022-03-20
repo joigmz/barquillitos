@@ -7,7 +7,7 @@ body{
 }
 
 .with-bg-size {
-    background: url('../img/banner.jpg') 50% 50% no-repeat;
+    background: url('../img/banner.jpg') 50% 50%;
     height: 200px;
     width: 100vw;
     /* Make the background image cover the area of the <div>, and clip the excess */
@@ -91,7 +91,9 @@ body{
 }
 
 .choice-box{
-    border-radius: 25px;
+    border-radius: 5px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;    
     margin: 10px 10px;
 
@@ -100,19 +102,72 @@ body{
 .img-choice{
     grid-area: img-choice;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .img-choice img{
-    width: 95%;
-    border-radius: 25%;
-    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.price{
+    font-weight: 700;
+    font-size: 1.15em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: price;
+}
+
+.counter-box{
+    display: flex;
+    justify-content: center;
+}
+
+.counter {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;    
+    border-radius: 25px;
     margin: 5px;
+  }
+  
+.up, .down {
+    display: block;
+    color: black;
+    font-size: 18px;
+    padding: 0 7px;
+    margin: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 24px;
+    line-height: 24px;
+    height: 24px;
+    user-select: none;
+}
+.up:hover, .down:hover {
+    color: #010200;
+}
+
+input {
+    appearance: none;
+    border: 0;
+    text-align: center;
+    width: 42px;
+    line-height: 24px;
+    font-size: 15px;
+    border-radius: 5px;
 }
 
 .description-choice{
-    padding: 10px 20px;
+    padding: 10px 5px;
     grid-area: description-choice;
 }
 
@@ -128,14 +183,24 @@ body{
     line-height: 20px;
     font-weight: 300;
 }
-
-.price{
-    font-weight: 700;
-    font-size: 1.15em;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.value{
+    text-align: center;
 }
+
+.add-cart{
+    background-color: #010200;
+    color: white;
+    font-family: 'Karla', sans-serif;
+    border-radius: 5px;
+    border: none;
+    height: 35px;
+    margin: 0px 10px;
+
+}
+
+#Cart{
+    fill:white;
+  }
 
 .product-detail{
     font-weight: 700;
@@ -163,6 +228,11 @@ body{
         color: #c89366;
         border-bottom: 5px solid rgb(0, 0, 0);
     }
+    .add-cart:hover{
+        cursor: pointer;
+        background-color: rgba(29, 116, 247, 0.575);
+        transition: 400ms;
+    }
   }
 
 @media screen and (max-width: 996px) {
@@ -185,12 +255,17 @@ body{
     .choice-box{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas:
-                "img-choice description-choice  description-choice";
+        grid-template-areas:"img-choice description-choice  description-choice"
+                            "price      price               price";
+        padding: 5px 0px;
+        border-radius: 5px;
     }
-
+    .img-choice{
+        justify-content: space-around;
+        margin: 0px 5px;
+    }
     .img-choice img{
-        margin-left: 20px;
+        border-radius: 25px;
     }
     .with-bg-size {
         height: 200px;
