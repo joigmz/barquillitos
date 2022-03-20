@@ -133,6 +133,8 @@ body{
     border-top: 1px solid #eee;
     padding: 10px 20px;
     grid-area: product-detail;
+    justify-content: center;
+    display: flex;
 }
 
 .link-look-product{
