@@ -101,10 +101,11 @@ body{
     grid-area: img-choice;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .img-choice img{
-    width: 100%;
+    width: 95%;
     border-radius: 25%;
     margin: 5px;
     box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
