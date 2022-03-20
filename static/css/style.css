@@ -92,7 +92,7 @@ body{
 
 .choice-box{
     border-radius: 25px;
-    box-shadow: 0 2px 4px rgb(50 50 93 / 10%);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;    
     margin: 10px 10px;
 
 }
@@ -107,8 +107,8 @@ body{
 .img-choice img{
     width: 95%;
     border-radius: 25%;
-    margin: 5px;
     box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+    margin-left: 20px;
 }
 
 .description-choice{
