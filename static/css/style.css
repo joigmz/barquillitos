@@ -108,7 +108,7 @@ body{
     width: 95%;
     border-radius: 25%;
     box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
-    margin-left: 20px;
+    margin: 5px;
 }
 
 .description-choice{
@@ -187,6 +187,10 @@ body{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:
                 "img-choice description-choice  description-choice";
+    }
+
+    .img-choice img{
+        margin-left: 20px;
     }
     .with-bg-size {
         height: 200px;
