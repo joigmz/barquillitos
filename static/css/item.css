@@ -20,7 +20,8 @@
 .choice-box2{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 12px;
 }
 
 .img-choice2{
@@ -30,7 +31,7 @@
 }
 .img-choice2 img{
     width: 70%;
-    border-radius: 5px;
+    border-radius: 12px;
 }
 
 .title2{
@@ -50,6 +51,10 @@
     font-size: 30px;
 }
 
+.last-offer{
+    padding: 0px 5%;
+
+}
 @media (hover: hover) {
     .return-menu:hover{
         background-color: black;
@@ -67,9 +72,7 @@
     }
 
     .choice-box2{
-        border-radius: 5px;
         box-shadow: 0 2px 4px rgb(50 50 93 / 10%);
-        margin: 10px 10px;
         display: block;
     }
     
@@ -78,9 +81,11 @@
     }
     
     .img-choice2 img{
-        border-radius: inherit;
         width: 100%;
-
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
     }
     
     .description-choice2{
@@ -100,9 +105,6 @@
     
     .price2{
         font-size: 1.15em;
-    }
-    .last-offer{
-        padding: 5px 10px;
     }
 }
 
