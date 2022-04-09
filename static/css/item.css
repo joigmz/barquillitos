@@ -55,6 +55,9 @@
     padding: 0px 5%;
 
 }
+.box-last-offerts{
+    margin: 0px 12px;
+}
 @media (hover: hover) {
     .return-menu:hover{
         background-color: black;
