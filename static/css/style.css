@@ -202,6 +202,7 @@ body{
 
     .fav-choices{
         grid-template-columns: 1fr;
+        padding: 0px;
     }
 
     .choice-box{
@@ -211,6 +212,7 @@ body{
                             "buy        description-choice  description-choice";
         padding: 5px 0px;
         border-radius: 5px;
+        margin: 5px 0px;
     }
     .img-choice{
         justify-content: space-around;
