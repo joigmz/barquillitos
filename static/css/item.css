@@ -58,12 +58,34 @@
 .box-last-offerts{
     margin: 0px 12px;
 }
+
+.box-whatsapp-link{
+    display: flex;
+    align-items: center;
+}
+
+.whatsapp-link {
+    margin: 100px 0px;
+}
+.whatsapp-link a{
+    background-color: rgb(0, 255, 106);
+    color: black;
+    font-weight: 600px;
+    padding: 10px;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
 @media (hover: hover) {
     .return-menu:hover{
         background-color: black;
         color: white;
         transition: 300ms;
         cursor: pointer;
+    }
+    .whatsapp-link a:hover{
+        box-shadow: 0 4px 8px rgb(50 50 93 / 40%);
+        transition: 200ms;
     }
   }
 
@@ -108,6 +130,14 @@
     
     .price2{
         font-size: 1.15em;
+    }
+
+    .box-whatsapp-link{
+        justify-content: center;
+    }
+
+    .whatsapp-link {
+        margin: 15px;
     }
 }
 

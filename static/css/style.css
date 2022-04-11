@@ -116,7 +116,7 @@ body{
 
 .buy{
     width: 64px;
-    padding: 8px;
+    padding: 6px;
     background-color: black;
     color: white;
     text-align: center;
@@ -125,6 +125,8 @@ body{
     width: 90%;
     margin: auto;
     margin-bottom: 5px;
+    border: black solid 2px;
+
 }
 
 .link-buy{
@@ -184,6 +186,12 @@ body{
         cursor: pointer;
         background-color: rgba(29, 116, 247, 0.575);
         transition: 400ms;
+    }
+    .buy:hover{
+        background-color: white;
+        color: black;
+        transition: 400ms;
+        border: black solid 2px;
     }
   }
 
