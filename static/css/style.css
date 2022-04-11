@@ -132,7 +132,6 @@ body{
     color: inherit;
     font-weight: 500;
     font-size: 1.2rem;
-    padding: 5px 5px;
 }
 
 .description-choice{
@@ -193,6 +192,9 @@ body{
         grid-template-columns: 1fr 1fr;
     }
 
+    .link-buy{
+        padding: 5px 5px;
+    }
   }
 
 
